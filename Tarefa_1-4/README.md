@@ -1,16 +1,16 @@
-#Assignment 1.4 - Reaction Time
+# Assignment 1.4 - Reaction Time
 
 Build a system to measure the reaction time of a user.
 
-*Digital Inputs
+* Digital Inputs
 	* Value of an ON/OFF button
-*Digital Outputs
+* Digital Outputs
 	* Turn ON/FF an LED
 	* Display the reaction time in a 7-segment display
 
 Description:
 
-	The LED must go off between 0 to 3 seconds, randomly. After this, the user must
+The LED must go off between 0 to 3 seconds, randomly. After this, the user must
 press the button. The time difference from when the LED went off and the user pressed the
 button is the reaction time that should be displayed onto the 7-segment display.
 
