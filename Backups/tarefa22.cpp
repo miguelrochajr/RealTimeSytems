@@ -9,6 +9,7 @@
 #include <time.h>
 #include "BlackGPIO/BlackGPIO.h"
 #include "BlackLib/BlackADC/BlackADC.h" // biblioteca para usar o ADC
+#include <ADC/Adc.h>
 
 using namespace std;
 
@@ -31,8 +32,10 @@ int main(){
 	int filho1, filho2;
 	int iteration_count = 0;
 
-	BlackLib::BlackADC  ad1(BlackLib::AIN0);
-	BlackLib::BlackADC  ad2(BlackLib::AIN1);
+	ADC ad1(AN0);
+	ADC ad2(AN1);
+	//BlackLib::BlackADC  ad1(BlackLib::AIN0);
+	//BlackLib::BlackADC  ad2(BlackLib::AIN1);
 	BlackLib::BlackGPIO led1(BlackLib::GPIO_46,BlackLib::output, BlackLib::SecureMode);
 	BlackLib::BlackGPIO led2(BlackLib::GPIO_45,BlackLib::output, BlackLib::SecureMode);
 
@@ -90,21 +93,23 @@ int main(){
 		// !!! LE O VALOR DO AD1 E DO AD2 !!!
 
 		//muda a prioridade dos filhos de acordo com os valores de ad1 e ad2
-		if (ad1.getNumericValue() >= 1000){
+		if (ad1.getFloatValue() >= 1000){
 			setpriority(PRIO_PROCESS, filho1, 5);
-			cout<<"AD1: "<<ad1.getNumericValue()<<endl;
+			cout<<"AD1: "<<ad1.getFloatValue()<<endl;
 		}
 		else{
 			setpriority(PRIO_PROCESS, filho1, 19);
-			cout<<"AD1: "<<ad1.getNumericValue()<<endl;
+			cout<<"AD1: "<<ad1.getFloatValue()<<endl;
 		}
-		if (ad2.getNumericValue() >= 1000){
+		if (ad2.getFloatValue() >= 1.0){
 			setpriority(PRIO_PROCESS, filho2, 5);
-			cout<<"AD2: "<<ad2.getNumericValue()<<endl;
+			cout<<"AD2: "<<ad2.getFloatValue()<<endl;
 		}
 		else{
 			setpriority(PRIO_PROCESS, filho2, 19);
 			cout<<"AD2: "<<ad1.getNumericValue()<<endl;
 		}
 	}
+
+	return 0;
 }
