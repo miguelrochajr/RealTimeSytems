@@ -13,6 +13,13 @@ The team was composed by:
 - Caio Vilar 
   - [GitHub](https://github.com/caiobvilar)
 
+## Repository Index
+
+- Assignment 1.4: [Reaction Time](https://github.com/miguelrochajr/RealTimeSytems-STR/tree/master/Tarefas/Tarefa_1-4)
+- Assignment 2.2: [Process Priority](https://github.com/miguelrochajr/RealTimeSytems-STR/tree/master/Tarefas/Tarefa_2-2)
+- Assignment 2.3: [Trains - Petris Network](https://github.com/miguelrochajr/RealTimeSytems-STR/tree/master/Tarefas/Tarefa_2-3)
+- 7 segment display Assignment: [7 segment Display](https://github.com/miguelrochajr/RealTimeSytems-STR/tree/master/7-segmentDisplay)
+- Final Assignment: [7-segment displays with Sockets](https://github.com/miguelrochajr/RealTimeSytems-STR/tree/master/7-segmentDisplay)
 
 ## YouTube Playlist
 
