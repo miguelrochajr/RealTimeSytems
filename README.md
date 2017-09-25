@@ -1,6 +1,6 @@
 # RealTimeSytems
 
-This repository was built to make it availabe all the code written by our team while taking the course Sistemas de Tempo Real, taught by Dr. Luiz Affonso.
+This repository was built to make it availabe all the code written by our team while taking the course Sistemas de Tempo Real, taught by [Dr. Luiz Affonso](https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1153006).
 
 The team was composed by:
 - Gabriel Signoretti
