@@ -12,3 +12,10 @@ The team was composed by:
   - [LinkedIn](https://linkedin.com/in/miguelrochajr)
 - Caio Vilar 
   - [GitHub](https://github.com/caiobvilar)
+
+
+## YouTube Playlist
+
+The demonstration of all projects found in this repository is available on YouTube:
+
+[STR YouTube Playlist](https://www.youtube.com/playlist?list=PLZlNGyDdWaYeNM8OIYrh-_WIhdU1WiGt8)
